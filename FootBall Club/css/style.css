@@ -1,0 +1,870 @@
+
+@import url(webfont.css);
+@import url(Register.css);
+
+/*
+Colors
+1-  #F2B705
+2-  #0D0D0D
+
+*/
+
+
+ *{
+	 padding: 0;
+	 margin: 0;
+	 box-sizing: border-box;
+ }
+ main{
+	 width: 100%;
+	 height: 100%;
+	 background-color:#0D0D0D ;
+
+ }
+
+ /************************************************ Nav ***************************************************/
+ nav{
+    width: 100%;
+    min-height: 60px;
+    background: #F2B705;
+	margin: auto; 
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+
+}
+ /************************************************ Logo ***************************************************/
+ .logo{
+	 width: 20%;
+	 height: 50px;
+ }
+ .logo img{
+	width: 60px;
+	height:60px;
+	position: relative;
+	left: 20px;
+ }
+ /************************************************ Nav List ***************************************************/
+
+nav ul{
+	width:80%;
+	list-style: none;
+	height: 60px;
+	display: flex;
+}
+nav ul li{
+	background: #0D0D0D;
+	width:20%;
+	min-height:60px;
+	display: flex;
+	border: 1px solid #F2B705;
+	transition: .3s all ease-in-out;
+}
+nav ul li a{
+	font-family: Orbitron;
+    text-decoration: none;
+    color: #fff;
+	line-height: 60px;
+	margin: auto;
+	display: flex;
+	letter-spacing:2px;
+
+}
+
+nav ul li:hover{
+	background: #F2B705;
+	cursor: pointer;
+	border: 1px solid #1B4C8C;
+
+}
+
+#ac a{
+	color: #F2B705;
+	font-family:Orbitron;
+	
+}
+#ac:hover{
+	border: 1px solid #1B4C8C;
+
+}
+#ac:hover a{
+	color :#0D0D0D;
+
+}
+  /************************************************ Header ***************************************************/
+  header{
+	background: url(../images/Bannar.jpg);
+	background-position: center;
+	background-size: cover;
+	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 53% 73%, 0% 100%);
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	min-height: 600px;
+}
+
+main header #headbnr{
+	display: flex;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	position: relative;
+	top: 50px;
+	left: 700px;
+}
+  /************************************************ Search Side ***************************************************/
+
+.search{
+	width: 150px;
+	height: 50px;
+	display: flex;
+	position: relative;
+	left: -90px;
+	top: 30px;
+	background-color: #F2B705 ;
+	border-radius: 10px;
+	transition: all 1s ease-in-out;
+}
+
+.search:hover{
+	left:10px;
+	cursor: pointer;
+}
+.search img{
+	display: flex;
+	position: relative;
+	width: 50px;
+	height: 30px;
+	background: #F2B705;
+	top: 10px;
+	right:0 ;
+	order: 2;
+}
+.search input{
+	width: 100px;
+	height: 50px;
+	display: flex;
+	padding: 10px;
+	border: 1px solid #0D0D0D;
+	background: transparent;
+	order: 1;
+}
+  /************************************************ ASide ***************************************************/
+aside{
+	width: 100%;
+	min-height: 240px;
+	display: flex;
+	background: #0D0D0D;
+}
+
+  /************************************************ Academy ***************************************************/
+.sportsacademy{
+    width:80%;
+    position: relative;
+    top:-70px;
+    margin: auto;
+    height: 200px;
+}
+
+
+  /************************************************ Tennis Academy ***************************************************/
+.tennisacademy{
+    width:20%;
+    height: 200px;
+    margin: 2%;
+    background: #fff url(../images/tennis2.png) no-repeat;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    border:2px solid #F2B705;
+    border-radius:10px;
+    display: inline-block;
+}
+.join1{
+    width:100%;
+    height: 100%;
+	background: rgba(253,221,0,.7);
+	font-family: Orbitron;
+    overflow: hidden;
+    color:#000;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+    clip-path: circle(2px at 0 0);
+    transition: all .5s ease-in-out;
+}
+.tennisacademy:hover .join1{
+    clip-path: circle(70%  at 0 0);
+}
+
+  /************************************************ Basket Academy ***************************************************/
+.basketacademy{
+    width:20%;
+    height: 200px;
+    margin: 2%;
+    background: #fff url(../images/basket5.png) no-repeat;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    border:2px solid #F2B705;
+    border-radius:10px;
+    display: inline-block;
+}
+.join2{
+    width:100%;
+    height: 100%;
+    background: rgba(253,221,0,.7);
+	overflow: hidden;
+	font-family: Orbitron;
+    color:#000;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+    clip-path: circle(2px at 0 0);
+    transition: all .5s ease-in-out;
+}
+.basketacademy:hover .join2{
+    clip-path: circle(70%  at 0 0);
+}
+  /************************************************ Swiming Academy ***************************************************/
+.swimmingacademy{
+    width:20%;
+    height: 200px;
+    margin: 2%;
+    background: #fff url(../images/swimming.png) no-repeat;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    border:2px solid #F2B705;
+    border-radius:10px;
+    display: inline-block;
+}
+.join3{
+    width:100%;
+    height: 100%;
+	background: rgba(253,221,0,.7);
+	font-family: Orbitron;
+    overflow: hidden;
+    color:#000;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+    clip-path: circle(2px at 0 0);
+    transition: all .5s ease-in-out;
+}
+.swimmingacademy:hover .join3{
+    clip-path: circle(70%  at 0 0);
+}
+  /************************************************ Football Academy ***************************************************/
+.footballcademy{
+    width:20%;
+    height: 200px;
+    margin: 2%;
+    background: #fff url(../images/football.png) no-repeat;
+    position: relative;
+    background-size: 100%;
+    background-position: center;
+    border:2px solid #F2B705;
+    border-radius:10px;
+    display: inline-block;
+}
+.join4{
+    width:100%;
+    height: 100%;
+	background: rgba(253,221,0,.7);
+	font-family: Orbitron;
+    overflow: hidden;
+    color:#000;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: bold;
+    clip-path: circle(2px at 0 0);
+    transition: all .5s ease-in-out;
+}
+.footballcademy:hover .join4{
+    clip-path: circle(70%  at 0 0);
+}
+
+  /************************************************ About ***************************************************/
+  h1{
+	display: block;
+	color: #fff;
+	width: 100%;
+	min-height: 40px;
+	text-align: center;
+	letter-spacing: 10px;
+	border-bottom: 2px solid #F2B705;
+	font-family: Orbitron;
+	background: #0D0D0D;
+}
+.about{
+	width: 100%;
+	min-height: 600px;
+	display: block;
+	position: relative;
+	background: url(../images/5.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-color: #0D0D0D;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+ 
+.about p{
+	width: 50%;
+	min-height: 100px;
+	text-align: center;
+	line-height: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+}
+
+  /************************************************ Champion ***************************************************/
+
+.champion{
+	display: flex;
+	width: 100%;
+	max-height: 50px;
+	background-color: #0D0D0D;
+}
+h2{
+	
+		display: block;
+		width: 100%;
+		height: 50px;
+		text-align: center;
+		/* line-height: 30px; */
+		letter-spacing: 10px;
+		align-items: center;
+		/* margin-top: 40px; */
+		border-bottom: 7px solid #F2B705;
+		border-top: 7px solid #F2B705;
+		font-family: Orbitron;
+		font-size: 25px;
+		color: #fff;
+	
+}
+  /************************************************ Aside Iframe ***************************************************/
+.frame{
+	display: flex;
+	width: 100%;
+	min-height:700px ;
+	background: #F2B705;
+}
+iframe{
+	width: 50%;
+	height: auto;
+
+}
+.frame img{
+	width: 50%;
+	position: relative;
+	display: flex;
+	transition: all 1s ease-in-out;
+}
+.frame img:hover{
+	opacity: .8;
+}
+  /************************************************ Aside News ***************************************************/
+.news{
+	width: 100%;
+	min-height:400px ;
+	display: flex;
+	background: #F2B705;
+	position: relative;
+	transition: all 1s ease-in-out;
+	font-family: Orbitron;
+
+}
+h3{
+	display: block;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	/* line-height: 30px; */
+	letter-spacing: 10px;
+	align-items: center;
+	/* margin-top: 40px; */
+	border-top: 7px solid #F2B705;
+	border-bottom: 2px solid #F2B705;
+	background: #0D0D0D;
+	font-family: Orbitron;
+	font-size: 25px;
+	color: #fff;
+}
+
+.news1,.news2,.news3{
+	display: block;
+	width: 25%;
+	height: 320px;
+	background: #0D0D0D;
+	margin:auto;
+	/* border: 2px; */
+	transition: all 1s ease-in-out;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.news1,.news2,.news3 p{
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	display: block;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+}
+
+.news1:hover{
+	transform: scale(1.2);
+	border-radius: 20px;
+}
+.news2:hover{
+	transform: scale(1.2);
+	border-radius: 20px;
+}
+.news3:hover{
+	transform: scale(1.2);
+	border-radius: 20px;
+}
+  /************************************************ Footer ***************************************************/
+footer{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	background: #0D0D0D;
+	display: flex;
+	align-items: center;
+	font-family: Orbitron;
+	color: #fff;
+	letter-spacing: 10px;
+	border-bottom: 20px solid #F2B705;
+}
+
+	 /*################################ Start media Query ####################################*/
+
+@media screen and (min-width:428px) and (max-width:926px){
+
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	main{
+		width: 100%;
+		min-height: 1000px;
+		background-color:#0D0D0D ;
+		overflow: hidden !important;
+	}
+   
+	 /*################################ Nav ####################################*/
+	 nav{
+	   width: 100%;
+	   min-height: 60px;
+	   background: #F2B705;
+	   margin: auto; 
+	   display: flex;
+	   flex-wrap: wrap;
+	   position: relative;
+   
+   }
+	 /*################################ Logo ####################################*/
+	 .logo{
+		width: 100%;
+		height: 60px;
+	}
+	.logo img{
+	   width: 60px;
+	   height:60px;
+	   position: relative;
+	   left: 20px;
+	}
+	 /*################################ Nav List ####################################*/
+   
+   nav ul{
+	   width:100%;
+	   list-style: none;
+	   height: 60px;
+	   display: flex;
+   }
+   nav ul li{
+	   background: #0D0D0D;
+	   width:25%;
+	   min-height:60px;
+	   display: flex;
+	   border: 1px solid #F2B705;
+	   transition: .5s all ease-in-out;
+   }
+   nav ul li a{
+	   text-decoration: none;
+	   color: #fff;
+	   line-height: 60px;
+	   margin: auto;
+	   display: flex;
+	   letter-spacing:2px;
+	   font-family: Orbitron;
+   
+   }
+   
+   nav ul li:hover{
+	   background: #F2B705;
+	   cursor: pointer;
+   }
+   
+   #ac a{
+	   color: #F2B705;
+	   font-family: Orbitron;
+   }
+   #ac a:hover{
+	   color :#0D0D0D;
+   }
+	 /*################################ Header ####################################*/
+	 header{
+	   background: url(../images/Bannar.jpg);
+	   background-position: center;
+	   background-size: cover;
+	   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 53% 73%, 0% 100%);
+	   position: relative;
+	   display: flex;
+	   flex-wrap: wrap;
+	   width: 100%;
+	   min-height: 600px;
+   }
+   
+   main header #headbnr{
+	   display: flex;
+	   width: 200px;
+	   height: 200px;
+	   display: flex;
+	   position: relative;
+	   top: 50px;
+	   left: 700px;
+   }
+	 /*################################ Search Side ####################################*/
+   
+   .search{
+	   width: 150px;
+	   height: 50px;
+	   display: flex;
+	   position: relative;
+	   left: -90px;
+	   top: 30px;
+	   background-color: #F2B705 ;
+	   border-radius: 10px;
+	   transition: 1s all ease-in-out;
+   }
+   
+   .search:hover{
+	   left:10px;
+	   cursor: pointer;
+   }
+   .search img{
+	   display: flex;
+	   position: relative;
+	   width: 50px;
+	   height: 30px;
+	   background: #F2B705;
+	   top: 10px;
+	   right:0 ;
+	   order: 2;
+   }
+   .search input{
+	   width: 100px;
+	   height: 50px;
+	   display: flex;
+	   padding: 10px;
+	   border: 1px solid #0D0D0D;
+	   background: transparent;
+	   order: 1;
+   }
+	 /*################################ Aside ####################################*/
+	 aside{
+	   width: 100%;
+	   min-height: 240px;
+	   display: flex;
+	   background: #0D0D0D;
+   }
+   
+	 /*################################ Academy ####################################*/
+	 .sportsacademy{
+	   width:100%;
+	   display: flex;
+	   flex-wrap: wrap;
+	   position: relative;
+	   top:-70px;
+	   margin: auto;
+	   height: 200px;
+   }
+   
+   
+	 /*################################ Tennis Academy ####################################*/
+	 .tennisacademy{
+	   width:20%;
+	   height: 200px;
+	   margin: 2%;
+	   background: #fff url(../images/tennis2.png) no-repeat;
+	   position: relative;
+	   background-size: 100%;
+	   background-position: center;
+	   border:2px solid #F2B705;
+	   border-radius:10px;
+	   display: inline-block;
+   }
+   .join1{
+	   width: 100%;
+	   height: 100%;
+	   background: rgba(253,221,0,.7);
+	   overflow: hidden;
+	   color:#000;
+	   font-size: 40px;
+	   line-height: 60px;
+	   font-weight: bold;
+	   font-family: Orbitron;
+	   clip-path: circle(2px at 0 0);
+	   transition: all .5s ease-in-out;
+   }
+   .tennisacademy:hover .join1{
+	   clip-path: circle(70%  at 0 0);
+   }
+   
+	 /*################################ Basketball ####################################*/
+	 .basketacademy{
+	   width:20%;
+	   height: 200px;
+	   margin: 2%;
+	   background: #fff url(../images/basket5.png) no-repeat;
+	   position: relative;
+	   background-size: 100%;
+	   background-position: center;
+	   border:2px solid #F2B705;
+	   border-radius:10px;
+	   display: inline-block;
+   }
+   .join2{
+	   width:100%;
+	   height: 100%;
+	   background: rgba(253,221,0,.7);
+	   overflow: hidden;
+	   color:#000;
+	   font-size: 40px;
+	   line-height: 60px;
+	   font-weight: bold;
+	   font-family: Orbitron;
+	   clip-path: circle(2px at 0 0);
+	   transition: all .5s ease-in-out;
+   }
+   .basketacademy:hover .join2{
+	   clip-path: circle(70%  at 0 0);
+   }
+	 /*################################ Swimming Academy ####################################*/
+	 .swimmingacademy{
+	   width:20%;
+	   height: 200px;
+	   margin: 2%;
+	   background: #fff url(../images/swimming.png) no-repeat;
+	   position: relative;
+	   background-size: 100%;
+	   background-position: center;
+	   border:2px solid #F2B705;
+	   border-radius:10px;
+	   display: inline-block;
+   }
+   .join3{
+	   width:100%;
+	   height: 100%;
+	   background: rgba(253,221,0,.7);
+	   overflow: hidden;
+	   color:#000;
+	   font-size: 40px;
+	   line-height: 60px;
+	   font-weight: bold;
+	   font-family: Orbitron;
+	   clip-path: circle(2px at 0 0);
+	   transition: all .5s ease-in-out;
+   }
+   .swimmingacademy:hover .join3{
+	   clip-path: circle(70%  at 0 0);
+   }
+	 /*################################ Football Academy ####################################*/
+	 .footballcademy{
+	   width:20%;
+	   height: 200px;
+	   margin: 2%;
+	   background: #fff url(../images/football.png) no-repeat;
+	   position: relative;
+	   background-size: 100%;
+	   background-position: center;
+	   border:2px solid #F2B705;
+	   border-radius:10px;
+	   display: inline-block;
+   }
+   .join4{
+	   width:100%;
+	   height: 100%;
+	   background: rgba(253,221,0,.7);
+	   overflow: hidden;
+	   color:#000;
+	   font-size: 40px;
+	   line-height: 60px;
+	   font-weight: bold;
+	   font-family: Orbitron;
+	   clip-path: circle(2px at 0 0);
+	   transition: all .5s ease-in-out;
+   }
+   .footballcademy:hover .join4{
+	   clip-path: circle(70%  at 0 0);
+   }
+   
+	 /*################################ About ####################################*/
+	 h1{
+	   display: block;
+	   color: #fff;
+	   width: 100%;
+	   min-height: 40px;
+	   text-align: center;
+	   letter-spacing: 10px;
+	   font-family: Orbitron;
+	   border-bottom: 2px solid #F2B705;
+	   margin-bottom: 30px;
+   }
+   .about{
+	   width: 100%;
+	   min-height: 600px;
+	   display: flex;
+	   position: relative;
+	   background: url(../images/5.png);
+	   background-position: top right;
+	   background-repeat: no-repeat;
+   }
+	
+   .about p{
+	   width: 100%;
+	   min-height: 100px;
+	   text-align: center;
+	   line-height: 30px;
+	   font-family: Arial, Helvetica, sans-serif;
+	   color: #fff;
+	   font-size: 16px;
+	   overflow: hidden;
+   }
+   
+	 /*################################ Champion ####################################*/
+   
+   .champion{
+	   display: flex;
+	   width: 100%;
+	   max-height: 50px;
+	   background-color: #0D0D0D;
+   }
+   h2{
+	   
+		   display: block;
+		   width: 100%;
+		   height: 50px;
+		   text-align: center;
+		   /* line-height: 30px; */
+		   letter-spacing: 10px;
+		   align-items: center;
+		   /* margin-top: 40px; */
+		   border-bottom: 7px solid #F2B705;
+		   border-top: 10px solid #F2B705;
+		   font-family: Orbitron;
+		   font-size: 25px;
+		   color: #fff;
+	   
+   }
+	 /*################################ Aside Iframe ####################################*/
+	 .frame{
+	   display: block;
+	   width: 100%;
+	   min-height:700px;
+	   background: #F2B705;
+   }
+   iframe{
+	   width: 100%;
+	   height: auto;
+   
+   }
+   .frame img{
+	   width: 100%;
+	   position: relative;
+	   display: block;
+	   transition: all 1s ease-in-out;
+   }
+   .frame img:hover{
+	   opacity: .8;
+   }
+	 /*################################ Aside News ####################################*/
+	 .news{
+	   width: 100%;
+	   min-height:400px ;
+	   display: block;
+	   flex-wrap: wrap;
+	   background: #F2B705;
+	   position: relative;
+	   transition: all 1s ease-in-out;
+	   overflow: hidden;
+   }
+   h3{
+	   display: block;
+	   width: 100%;
+	   height: 40px;
+	   text-align: center;
+	   /* line-height: 30px; */
+	   letter-spacing: 10px;
+	   align-items: center;
+	   /* margin-top: 40px; */
+	   border-top: 7px solid #F2B705;
+	   border-bottom: 2px solid #F2B705;
+	   font-family: Orbitron;
+	   font-size: 25px;
+	   color: #fff;
+   }
+   
+   .news1,.news2,.news3{
+	   display: block;
+	   width: 90%;
+	   height: 320px;
+	   background: #0D0D0D;
+	   margin:auto;
+	   /* border: 2px; */
+	   transition: all 1s ease-in-out;
+   }
+   .news1,.news2,.news3 p{
+	   position: relative;
+	   display: block;
+	   color: #fff;
+	   /* text-align: center; */
+	   align-content: center;
+	   line-height: 25px;
+	   overflow: hidden;  
+	   font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .news1:hover{
+	   transform: scale(1.2);
+	   border-radius: 20px;
+   }
+   .news2:hover{
+	   transform: scale(1.2);
+	   border-radius: 20px;
+   }
+   .news3:hover{
+	   transform: scale(1.2);
+	   border-radius: 20px;
+   }
+	 /*################################ Footer ####################################*/
+	 footer{
+	   width: 100%;
+	   height: 100px;
+	   background: #0D0D0D;
+	   display: flex;
+	   flex-wrap: wrap;
+	   align-items: center;
+	   color: #fff;
+	   border-bottom: 20px solid #F2B705;
+	   font-family: Orbitron;
+   }
+   
+}
+	 /*################################ End media Query ####################################*/
