@@ -18,7 +18,7 @@ main{
     transition: all 1s ease-in;
 }
 .bg{
-    height: 570px;
+    min-height: 570px;
     background: url(../images/bgggg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -26,10 +26,7 @@ main{
     position: relative;
 }
 header{
-    min-height: 300px;
-}
-.dd{
-    min-height: 150px;
+    min-height: 100vh;
 }
 .d1{
     height: 150px;
